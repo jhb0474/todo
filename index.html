@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>binnylist</title>
+        <style>
+            body {
+                width: 480px;
+                margin: 150px auto;
+                font-family: 나눔스퀘어;
+                color: black;
+                font-size: 20px;
+                font-weight: 500;
+                background-image:url('https://i.graphicmama.com/blog/wp-content/uploads/2020/01/24154232/vintage-ornamental-pattern-background-with-flowers.jpg')
+            }
+
+            .to-dos {
+                background-color: white;
+            }
+
+            .container {
+                width: 360px;
+            }
+
+            #inputField, input[type=text] {
+                width : 300px;
+                height : 46px;
+                border : 1px solid black;
+                outline : none;
+                font-size: 20px;
+                vertical-align: middle;
+                font-family: 나눔스퀘어;
+            }
+
+            #addToDo {
+                height : 50px;
+                width : 50px;
+                border : 1px solid black;
+                vertical-align: middle;
+                font-size: 30px;
+                color:burlywood;
+                background-color:black;
+            }
+
+            input[type=submit] {
+                height : 50px;
+                width : 50px;
+                border : none;
+                vertical-align: middle;
+                font-size: 30px;
+                color:black;
+                background-color: transparent;
+            }
+
+            .to-dos {
+                margin-top: 25px;
+            }
+
+            .paragraph-styling {
+                margin: 0;
+                cursor: pointer;
+                font-size: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>live the life you love</h1>
+        <div class="container">
+            <input id="inputField" type="text" placeholder="to-do"><button id="addToDo">♥</button>
+            <div class="to-dos" id="toDocontainer"></div>
+        </div>
+        <script src="todo.js"></script>
+        <div class="searching">
+        <form method=get action="http://www.google.co.kr/search" target="_blank" >
+            <table>
+              <tr>
+                <td>
+                    <input type=text name=q value="" placeholder="searching" />
+                    <input type=submit name=search value="?" />
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+    </body>
+</html>
